@@ -4,10 +4,6 @@
 // import Auth from "../../utils/Auth";
 // import styles from "./Login.module.css";
 
-// interface LoginMutationVariables {
-//   email: string;
-//   password: string;
-// }
 
 // const LOGIN = gql`
 //   mutation login($email: String!, $password: String!) {
