@@ -1,10 +1,100 @@
 [
     {
-        ""
+        "title" : "Apa",
+        "description": "Two Sisters and two beauties. Great gift if you have a sister or a best friend.",
+        "image": "images/apa.png",
+        "price": 45.99
+    },
+
+    {
+        "title" : "Duhtar",
+        "description": "Perfect for a mother who has a little daughter.",
+        "image": "images/duhtar.jpg",
+        "price": 44.99
+    },
+    {
+        "title" : "Ginger",
+        "description": "Absolutly stunning jacket that depicts girl with ginger hair.",
+        "image": "images/ginger.png",
+        "price": 65.99
+    },
+    {
+        "title" : "Gulya",
+        "description": "Vibrant colors and a very unique gift from Central Asia.",
+        "image": "images/gulya.png",
+        "price": 45.99
+    },
+    {
+        "title" : "Izo",
+        "description": "Mysterious girl with charming smile.",
+        "image": "images/izo.png",
+        "price": 65.99
+    },
+    {
+        "title" : "Kashang",
+        "description": "Sucha a beuty and tenderness all in one work of art.",
+        "image": "images/kashang.png",
+        "price": 45.99
+    },
+    {
+        "title" : "Lali",
+        "description": "Beutiful girl from the Pamir mountans.",
+        "image": "images/lali.png",
+        "price": 45.99
+    },
+    {
+        "title" : "Lola",
+        "description": "Gorgious and yet so simple. Perfeclt frozen in a moment. lola would be excellent choice. ",
+        "image": "images/Lola.png",
+        "price": 75.99
+    },
+    {
+        "title" : "Manija",
+        "description": "Middle Eastern princess. Excusite choice would be perfect just for  anybody.",
+        "image": "images/manija.png",
+        "price": 75.99
+    },
+    {
+        "title" : "Masha",
+        "description": "It is a Slovonic beauty that portrays a girl in traditional crown like headband",
+        "image": "images/masha.png",
+        "price": 45.99
+    },
+    {
+        "title" : "Paree",
+        "description": "Magical Fairy in enchanted wonderland.",
+        "image": "images/paree.png",
+        "price": 45.99
+    },
+    {
+        "title" : "Piyola",
+        "description": "Have a bedass attutute and cool  friend then this jacket is excellent choice for you",
+        "image": "images/piyola.png",
+        "price": 75.99
+    },
+    {
+        "title" : "Pomir",
+        "description": "Such a tendersness in stokes of the brush. Simply stunning.",
+        "image": "images/pomir.png",
+        "price": 45.99
+    },
+    {
+        "title" : "Rajah",
+        "description": "Such an amazing product for bug cat lovers.",
+        "image": "images/rajah.png",
+        "price": 65.99
+    },
+    {
+        "title" : "Safed",
+        "description": "Another perfect gitf for lovely mothers",
+        "image": "images/safed.png",
+        "price": 55.99
+    },
+    {
+        "title" : "Safed Psree",
+        "description": "Beutifl blond braides would be zazing choice for you or your friend.",
+        "image": "images/safedparee.png",
+        "price": 55.99
     }
-
-
-
-
 
 ]
