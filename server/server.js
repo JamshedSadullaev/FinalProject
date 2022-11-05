@@ -30,6 +30,7 @@ app.get('/', (req, res) => {
 const startApolloServer = async (typeDefs, resolvers) => {
   await server.start();
   server.applyMiddleware({ app });
+  //connecting express to apollo and gives us the slash
   
   db.once('open', () => {
     app.listen(PORT, () => {
