@@ -9,7 +9,8 @@ const { Schema } = require('mongoose');
 const jacketSchema = new Schema ({
     title:{
         type: String,
-        required: true
+        required: true, 
+        trim: true
     },
     description: {
         type: String,
@@ -21,6 +22,9 @@ const jacketSchema = new Schema ({
     price: {
         type: Number,
         required: true
+    },
+    quantity: {
+        type: number
     }
 });
 
