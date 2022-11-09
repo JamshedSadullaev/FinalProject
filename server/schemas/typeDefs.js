@@ -1,31 +1,31 @@
 const { gql } = require('apollo-server-express');
-//Defenitions of types 
-//representation of one element in db
-const typeDefs = gql `
 
-type Jacket {
+const typeDefs = gql`
+  type Category {
     _id: ID
-    title: String!
+    name: String
+  }
+  type Product {
+    _id: ID
+    name: String
     description: String
     image: String
-    price: Float
     quantity: Int
-
-}
-type Order {
+    price: Float
+    category: Category
+  }
+  type Order {
     _id: ID
     purchaseDate: String
-    jacket: [Jacket]
+    products: [Product]
   }
-
- type User {
+  type User {
     _id: ID
     firstName: String
     lastName: String
     email: String
     orders: [Order]
   }
-
   type Checkout {
     session: ID
   }
@@ -33,33 +33,30 @@ type Order {
     token: ID
     user: User
   }
-
   type Query {
-    
-    jacket(jacket: ID, name: String): [Jacket]
-    jacket(_id: ID!): Jacket
+    categories: [Category]
+    products(category: ID, name: String): [Product]
+    product(_id: ID!): Product
     user: User
     users : [User]
     order(_id: ID!): Order
-    checkout(jacket: [ID]!): Checkout
+    checkout(products: [ID]!): Checkout
   }
-
   input newInfo {
     name: String
     description: String
     quantity: Int
     price: Float
   }
-
   type Mutation {
     addUser(firstName: String!, lastName: String!, email: String!, password: String!): Auth
-    addOrder(jacket: [ID]!): Order
+    addOrder(products: [ID]!): Order
     updateUser(firstName: String, lastName: String, email: String, password: String): User
-    updateJacket(_id: ID!, quantity: Int!): Jacket
+    updateProduct(_id: ID!, quantity: Int!): Product
     login(email: String!, password: String!): Auth
-    deleteJacket(_id: String!): Jacket
-    editJackett(_id: String!, JackettInfo: newInfo!):Jacket
+    deleteProduct(_id: String!): Product
+    editProduct(_id: String!, productInfo: newInfo!):Product
   }
 `;
-//query things that you would like to expose through thr API 
+
 module.exports = typeDefs;

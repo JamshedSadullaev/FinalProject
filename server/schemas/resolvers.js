@@ -1,5 +1,7 @@
 // const { AuthenticationError } = require('apollo-server-express');
-const { Jacket } = require('../models');
+const { Produc, Order, User } = require('../models');
+const { signToken } = require('../utils/auth');
+//need to require stripe here
 
 const resolvers = {
     

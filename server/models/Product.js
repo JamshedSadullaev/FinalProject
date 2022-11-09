@@ -6,7 +6,7 @@
 //not sure how but having it in stock in certain amout 
 const { Schema, model } = require('mongoose');
 
-const jacketSchema = new Schema ({
+const productSchema = new Schema ({
     title:{
         type: String,
         required: true, 
@@ -24,10 +24,10 @@ const jacketSchema = new Schema ({
         required: true
     },
     quantity: {
-        type: number
+        type: Number
     }
 });
 
-const Jacket = model('Jacket', jacketSchema);
+const Product = model('Product', productSchema);
 
-module.exports = Jacket;
+module.exports = Product;

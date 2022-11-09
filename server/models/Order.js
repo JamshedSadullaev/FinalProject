@@ -1,6 +1,5 @@
 const { Schema, model } = require('mongoose');
 
-const { Schema } = mongoose;
 
 const orderSchema = new Schema({
   purchaseDate: {
