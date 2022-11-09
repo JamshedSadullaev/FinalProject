@@ -4,12 +4,13 @@
 //img
 //price
 //not sure how but having it in stock in certain amout 
-const { Schema } = require('mongoose');
+const { Schema, model } = require('mongoose');
 
-const jacketSchema = new Schema ({
+const productSchema = new Schema ({
     title:{
         type: String,
-        required: true
+        required: true, 
+        trim: true
     },
     description: {
         type: String,
@@ -21,9 +22,12 @@ const jacketSchema = new Schema ({
     price: {
         type: Number,
         required: true
+    },
+    quantity: {
+        type: Number
     }
 });
 
-const Jacket = model('Jacket', jacketSchema);
+const Product = model('Product', productSchema);
 
-module.exports = Jacket;
+module.exports = Product;

@@ -1,21 +1,21 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
-import { QUERY_ALL_PRODUCTS } from "../utils/queries";
+import { QUERY_ALL_JACKET } from "../utils/queries";
 
 const Admin = () => {
-    const {loading, data} = useQuery(QUERY_ALL_PRODUCTS);
-    const productList = data?.products || {}
-    console.log(productList)
+    const {loading, data} = useQuery(QUERY_ALL_JACKET);
+    const jacketList = data?.jacket || {}
+    console.log(jacketList)
     if (loading) {
         return <h2>loading</h2>
     }
     return (
       <div className="container">
         admin page
-        {productList?.map((product) => {
+        {jacketList?.map((jacket) => {
             return (
                 <div>
-            <h1>{product.name}</h1>
+            <h1>{jacket.name}</h1>
 
                 </div>
             )
