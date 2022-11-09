@@ -52,7 +52,7 @@ function JacketList() {
               key={jacket._id}
               _id={jacket._id}
               image={jacket.image}
-              name={Jacket.name}
+              name={jacket.name}
               price={jacket.price}
               quantity={jacket.quantity}
             />
