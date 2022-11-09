@@ -4,7 +4,7 @@
 //img
 //price
 //not sure how but having it in stock in certain amout 
-const { Schema } = require('mongoose');
+const { Schema, model } = require('mongoose');
 
 const jacketSchema = new Schema ({
     title:{
