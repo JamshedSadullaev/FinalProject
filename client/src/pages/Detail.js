@@ -75,7 +75,7 @@ function Detail() {
   const removeFromCart = () => {
     dispatch({
       type: REMOVE_FROM_CART,
-      _id: currentJackett._id,
+      _id: currentJacket._id,
     });
 
     idbPromise('cart', 'delete', { ...currentJacket });
@@ -83,7 +83,7 @@ function Detail() {
 
   return (
     <>
-      {currentJackett && cart ? (
+      {currentJacket && cart ? (
         <div className="container my-1">
           <Link to="/">← Back to Jackets</Link>
 

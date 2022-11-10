@@ -7,7 +7,7 @@ import {
   createHttpLink,
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
-// import Auth from "../src/utils/auth";
+// import Auth from "../src/utils/Auth";
 import Home from '../src/pages/Home';
 //import Detail from '../src/pages/Detail';
 import NoMatch from '../src/pages/NoMatch';
