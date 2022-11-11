@@ -72,10 +72,10 @@ const Cart = () => {
 
   return (
     <div className="cart">
-      <div className="close" onClick={toggleCart}>
-        [close]
+      <div className="close" >
+        <button onClick={toggleCart}>CLOSE</button>
       </div>
-      <h2>Shopping Cart</h2>
+      <h3>Shop till you drop</h3>
       {state.cart.length ? (
         <div>
           {state.cart.map((item) => (
@@ -83,12 +83,12 @@ const Cart = () => {
           ))}
 
           <div className="flex-row space-between">
-            <strong>Total: ${calculateTotal()}</strong>
+            <span className='total'>Total: ${calculateTotal()}</span>
 
             {Auth.loggedIn() ? (
               <button onClick={submitCheckout}>Checkout</button>
             ) : (
-              <span>(log in to check out)</span>
+              <span>Signup or Login to make a purchase</span>
             )}
           </div>
         </div>
