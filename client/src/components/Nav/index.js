@@ -19,7 +19,7 @@ function showNavigation() {
         <li className="mx-1">
          
           <a href="/" onClick={() => Auth.logout()}>
-            Logout
+            Log out
           </a>
         </li>
       </ul>
@@ -28,19 +28,19 @@ function showNavigation() {
     return (
       <ul className="flex-row">
     
-        <li className="mx-1">
+        <li className="mx-1 a">
           <Link to="/signup">
-            SIGNUP
+            Sign Up
           </Link>
         </li>
-        <li className="mx-1">
+        <li className="mx-1 a">
           <Link to="/login">
-            LOGIN
+            Log In
           </Link>
         </li>
-        <li className="mx-1">
+        <li className="mx-1 a">
           <Link to="/">
-            HOME
+            Home
           </Link>
         </li>
       </ul>
@@ -55,7 +55,7 @@ function Nav() {
 
   return (
     <header className="flex-row px-1 ">
-      <h1 className="namesize">
+      <h1 className="namesize a">
         <Link to="/">
           Art of Jackets
         </Link>

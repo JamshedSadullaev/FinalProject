@@ -79,13 +79,15 @@ p {
   color:#fff
 }
 
-a {
-  color: #212121;
-  text-decoration: none;
+.a {
+ 
+ 
   font-weight: bold;
-  background-color: #82709c;
-  border-radius: 25px;
-  font-size: 75px;
+  background-color: #100c17;
+  padding: 3px;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ 
 }
 
 .centering {
@@ -161,6 +163,9 @@ nav {
 
 .namesize {
   font-size: 1.25rem;
+}
+li {
+  text-decoration: none;
 }
 
 button {
