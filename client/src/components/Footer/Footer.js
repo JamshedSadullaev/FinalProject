@@ -7,6 +7,8 @@ const Footer = () => {
     <footer > 
     <div className='glow'>
         Made with love and collaboration
+        <br/>
+        <a className="ig" href="https://www.instagram.com/pleiades__artshop/"> Click to visit IG</a>
       </div>  
     </footer>
   )
