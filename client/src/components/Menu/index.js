@@ -43,7 +43,8 @@ function Menu() {
 
   return (
     <div className='centering'>
-      <h2 className='text'>Hand Painted Jackets</h2>
+      {/* <h2 className='text'>Hand Painted Jackets</h2> */}
+      {/* <img className="banner" src="images/topbanner.png" alt="banner "/>  */}
       
     </div>
   );
