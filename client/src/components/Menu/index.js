@@ -34,12 +34,12 @@ function Menu() {
     }
   }, [categoryData, loading, dispatch]);
 
-  const handleClick = (id) => {
-    dispatch({
-      type: UPDATE_CURRENT_CATEGORY,
-      currentCategory: id,
-    });
-  };
+  // const handleClick = (id) => {
+  //   dispatch({
+  //     type: UPDATE_CURRENT_CATEGORY,
+  //     currentCategory: id,
+  //   });
+  // };
 
   return (
     <div className='centering'>
