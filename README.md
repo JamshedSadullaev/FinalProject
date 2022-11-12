@@ -20,10 +20,10 @@ This application uses React for the front end, GraphQl, Node.js and Express.js s
 Mongoose ODM, and Bootstrap for styling. The payment are processing system, Strip, is also used.
 
 ## Screenshot
- 
 
- 
-## Usage
+rdmdScreenshot.png
+
+ ## Usage
   
 This application is deployed to Heroku and can be used by visiting the following link:
   
@@ -42,4 +42,4 @@ This application is deployed to Heroku and can be used by visiting the following
 
 ## Questions or Comments?
  
- https://github.com/[ ]
+  https://github.com/JamshedSadullaev/FinalProject.git 
